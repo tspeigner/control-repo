@@ -5,7 +5,9 @@ class profile::app::sample_website {
     'windows': {
       include profile::app::sample_website::windows
     }
-    'Linux':   { include profile::app::sample_website::linux   }
+    'Linux':   {
+      include profile::app::sample_website::linux
+    }
     default:   {
       fail('Unsupported kernel detected')
     }

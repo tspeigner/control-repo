@@ -1,7 +1,6 @@
 require 'spec_helper'
 
-describe 'role::master_server' do
-
+describe 'profile::puppet::seteam_master' do
     SUPPORTED_OS.each do |os, facts|
       context "on #{os}" do
         let(:facts) do
@@ -9,20 +8,21 @@ describe 'role::master_server' do
         end
 
         let(:pre_condition) {'
-          service {"pe-puppetserver": ensure => running }
+          service { "pe-puppetserver":
+            ensure     => "running",
+          }
         '}
 
-        if Gem.win_platform?
+        if facts[:kernel] != 'Linux'
           context "unsupported OS" do
             it { is_expected.to compile.and_raise_error(/Unsupported OS/)  }
           end
         else
           context "without any parameters" do
-            it { is_expected.to compile.with_all_deps }
+            it { is_expected.to compile }
           end
         end
 
       end
     end
-
 end
