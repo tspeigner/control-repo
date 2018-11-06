@@ -1,6 +1,6 @@
 class profile::app::discovery (
   $pd_url     = 'https://goo.gl/e1Jsi1', #shortened URL of Discovery download
-  $pd_license = 'https://goo.gl/SRtH7x', #license file on S3
+  $pd_license = "puppet:///modules/profile/app/$license_file", #license file on master
   $license_file = '/root/puppet_discovery/discovery.license.json'
 ) {
   # Baseline and install Docker
