@@ -3,29 +3,6 @@ forge "http://forge.puppetlabs.com"
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
-<<<<<<< HEAD
-mod 'tspy-code_deploy', '1.0.3'
-mod 'tspy-win_apache', '0.1.2'
-mod 'cohdjn-cisecurity', '0.7.1'
-mod 'puppetlabs-exec', '0.1.0'
-mod 'puppetlabs-resource', '0.1.0'
-mod 'puppetlabs-service', '0.1.3'
-mod 'puppetlabs-inifile', '1.6.0'
-mod "puppetlabs-stdlib", '4.17.0'
-mod 'puppetlabs-ciscopuppet', '1.7.0'
-mod "puppetlabs-concat", '4.0.0'
-mod 'puppetlabs-acl', '2.0.1'
-mod 'puppetlabs-apache', '2.3.0'
-mod 'puppetlabs-aws', '2.0.0'
-mod 'puppetlabs-azure', '1.1.1'
-mod 'puppetlabs-chocolatey', '3.0.0'
-mod 'puppetlabs-dism', '1.2.0'
-mod 'puppetlabs-dsc', '1.3.0'
-mod 'puppetlabs-firewall', '1.8.2'
-mod 'puppetlabs-git', '0.5.0'
-mod 'puppetlabs-haproxy', '1.5.0'
-mod 'puppetlabs-iis', '4.1.1'
-=======
 mod 'puppetlabs-acl', '2.0.1'
 mod 'puppetlabs-apache', '2.3.0'
 mod 'puppetlabs-apt', '4.1.0'
@@ -50,7 +27,6 @@ mod 'puppetlabs-haproxy', '1.5.0'
 mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-iis', '4.1.1'
 mod 'puppetlabs-inifile', '1.6.0'
->>>>>>> 055a66b5630d30fd81cc767c9bf8c8b4c588a112
 mod 'puppetlabs-java', '2.0.0'
 mod 'puppetlabs-limits', '0.1.0'
 mod 'puppetlabs-motd', '1.4.0'
