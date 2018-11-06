@@ -1,5 +1,6 @@
 forge "http://forge.puppetlabs.com"
 
+
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 mod 'puppetlabs-acl', '2.0.1'
@@ -97,6 +98,9 @@ mod 'trlinkin-domain_membership', '1.1.2'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
 mod 'yelp-uchiwa', '2.0.0'
+
+mod 'puppet_module',
+  :git => 'https://github.com/tspeigner/puppet_module.git'
 
 mod 'tse-tse_facts',
   :git => 'https://github.com/puppetlabs/tse-module-tse_facts.git'
