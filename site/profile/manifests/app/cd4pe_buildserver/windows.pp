@@ -20,7 +20,7 @@ class profile::app::cd4pe_buildserver::windows
     require  => File['Puppet Development Kit download'],
   }
 
-  ensure_packages(['Wget','git','docker'], { ensure => present, provider => 'chocolatey' })
+  ensure_packages(['Wget','docker'], { ensure => present, provider => 'chocolatey' })
 
   # If this cacert isn't placed and used, ruby version managers will croak
   file { 'C:/cacert':
