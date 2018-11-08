@@ -4,23 +4,14 @@ class profile::app::cd4pe_buildserver::windows
   file { 'c:/tmp':
     ensure   => directory,
   }
-  #Install files and packages
-#  file { 'Puppet Development Kit download':
-#    ensure   => present,
-#    source   => #'https://puppet-pdk.s3.amazonaws.com/pdk/1.5.0.0/repos/windows/pdk-1.5.0.0-x64.msi',
-#    path     => 'c:/tmp/pdk-1.5.0.0-x64.msi',
-#    checksum => 'mtime',
-#    require  => File['c:/tmp'],
-#  }
 
-#  package { 'Puppet Development Kit':
-#    ensure   => present,
-#    source   => 'c:/tmp/pdk-1.5.0.0-x64.msi',
-#    provider => 'windows',
-#    require  => File['Puppet Development Kit download'],
-#  }
-
-  ensure_packages(['Wget','docker','pdk'], { ensure => present, provider => 'chocolatey' })
+  Package {
+    ensure   => installed,
+    provider => chocolatey,
+  }
+  package {'Wget':}
+  package {'docker':}
+  package {'pdk':}
 
   # If this cacert isn't placed and used, ruby version managers will croak
   file { 'C:/cacert':
