@@ -6,7 +6,7 @@ class profile::platform::baseline::windows::packages {
   }
 
   package { 'notepadplusplus': }
-  package { 'chocolatey': }
+  package { 'chocolatey':   }
   package { '7zip': }
   package { 'git': }
   package { 'uniextract': }
