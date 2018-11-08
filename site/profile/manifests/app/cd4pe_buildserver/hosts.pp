@@ -7,10 +7,10 @@ class profile::app::cd4pe_buildserver::hosts {
   $response           = puppetdb_query($cd4pe_query)
   $cd4pe_ip           = $response[0]['facts']['ipaddress']
 
-  host { 'cd4pe.pdx.puppet.vm':
+  host { 'cd4pe.ts-aws.puppet.vm':
     ensure       => 'present',
     ip           => $cd4pe_ip,
-    host_aliases => ['cd4pe', 'gitlab.pdx.puppet.vm', 'gitlab'],
+    host_aliases => ['cd4pe'],
   }
 
 }
