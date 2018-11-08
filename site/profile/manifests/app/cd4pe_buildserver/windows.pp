@@ -4,8 +4,6 @@ class profile::app::cd4pe_buildserver::windows
   file { 'c:/tmp':
     ensure   => directory,
   }
-  # Include docker on this host
-  include ::docker
   #Install files and packages
   file { 'Puppet Development Kit download':
     ensure   => present,
@@ -22,7 +20,7 @@ class profile::app::cd4pe_buildserver::windows
     require  => File['Puppet Development Kit download'],
   }
 
-  ensure_packages(['Wget','git'], { ensure => present, provider => 'chocolatey' })
+  ensure_packages(['Wget','git','docker'], { ensure => present, provider => 'chocolatey' })
 
   # If this cacert isn't placed and used, ruby version managers will croak
   file { 'C:/cacert':
