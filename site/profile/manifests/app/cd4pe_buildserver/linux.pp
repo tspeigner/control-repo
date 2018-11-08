@@ -8,6 +8,7 @@ class profile::app::cd4pe_buildserver::linux(
   }
 
   include ::pdk
+  include ::docker
 
   $dev_packages = $::osfamily ? {
     'RedHat' => ['gcc','gcc-c++','openssl-devel','readline-devel','zlib-devel','cmake'],

@@ -4,7 +4,9 @@ class profile::app::cd4pe_buildserver::windows
   file { 'c:/tmp':
     ensure   => directory,
   }
-
+  # Include docker on this host
+  include ::docker
+  #Install files and packages
   file { 'Puppet Development Kit download':
     ensure   => present,
     source   => 'https://puppet-pdk.s3.amazonaws.com/pdk/1.5.0.0/repos/windows/pdk-1.5.0.0-x64.msi',
