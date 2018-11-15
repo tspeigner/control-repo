@@ -2,7 +2,6 @@
 class profile::app::cd4pe_buildserver::hosts {
 
   $master_server = $::settings::server
-  
   $cd4pe_query        = "inventory[facts] { facts.trusted.certname ~ 'cd4pe' }"
   $response           = puppetdb_query($cd4pe_query)
   $cd4pe_ip           = $response[0]['facts']['ipaddress']

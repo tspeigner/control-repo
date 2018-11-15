@@ -1,25 +1,20 @@
 class profile::cd4pe {
   include docker
-  
   docker::image { 'pcr-internal.puppet.net/pipelines/pfi':
     image_tag => 'latest',
   }
-  
   docker::image { 'mysql':
     image_tag => '5.7',
   }
-  
   docker::image { 'docker.bintray.io/jfrog/artifactory-oss':
     image_tag => '5.8.3',
   }
-  
   docker_network { 'cd4pe-network':
     ensure      => 'present',
     driver      => 'bridge',
     ipam_driver => 'default',
     subnet      => '172.18.0.0/16',
   }
-  
   docker::run { 'cd4pe-mysql':
     image   => 'mysql:5.7',
     net     => 'cd4pe-network',
@@ -32,14 +27,12 @@ class profile::cd4pe {
       'MYSQL_USER=cd4pe',
     ],
   }
-  
   docker::run { 'cd4pe-artifactory':
     image   => 'docker.bintray.io/jfrog/artifactory-oss:5.8.3',
     net     => 'cd4pe-network',
     ports   => ['8081:8081'],
     volumes => ['data_s3:/var/opt/jfrog/artifactory'],
   }
-  
   docker::run { 'cd4pe':
     image   => 'pcr-internal.puppet.net/pipelines/pfi:latest',
     net     => 'cd4pe-network',

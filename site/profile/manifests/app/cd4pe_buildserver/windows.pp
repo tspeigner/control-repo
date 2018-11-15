@@ -6,7 +6,7 @@ class profile::app::cd4pe_buildserver::windows
   }
 
   Package {
-    ensure   => installed,
+    ensure   => latest,
     provider => chocolatey,
   }
   package {'Wget':}
