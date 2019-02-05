@@ -4,13 +4,13 @@ forge "http://forge.puppetlabs.com"
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 mod 'puppetlabs-acl', '2.0.1'
-#mod 'tspy-code_deploy', '1.0.3'
+mod 'tspy-code_deploy', '1.0.4'
 mod 'puppetlabs-apache', '2.3.0'
 mod 'puppetlabs-apt', '4.1.0'
 mod 'puppetlabs-aws', '2.1.0'
 mod 'puppetlabs-azure', '1.3.1'
 mod 'puppetlabs-bolt_shim', '0.1.1'
-mod 'puppetlabs-cd4pe', '1.0.2'
+mod 'puppetlabs-cd4pe', '1.0.4'
 mod 'puppetlabs-chocolatey', '2.0.2'
 mod 'puppetlabs-cisco_ios', '0.2.0'
 mod 'puppetlabs-ciscopuppet', '1.10.0'
@@ -45,7 +45,7 @@ mod 'puppetlabs-resource_api', '1.0.0'
 mod 'puppetlabs-service', '0.1.3'
 mod 'puppetlabs-sqlserver', '1.2.0'
 mod 'puppetlabs-stdlib', '4.25.1'
-mod 'puppetlabs-tomcat', '1.7.0'
+mod 'puppetlabs-tomcat', '2.5.0'
 mod 'puppetlabs-transition', '0.1.1'
 mod 'puppetlabs-translate', '1.2.0'
 mod 'puppetlabs-vcsrepo', '1.5.0'
@@ -122,11 +122,3 @@ mod 'netstat',
   :git => 'https://github.com/ipcrm/ipcrm-netstat.git',
   :ref => 'master'
 
-# This module is BROKEN from the Forge. Renaming it via git source.
-mod 'distelli',
-  :git => 'https://github.com/puppetlabs/puppetlabs-distelli_agent.git',
-  :tag => '0.1.2'
-
-mod 'code_deploy',
-  :git => 'https://github.com/tspeigner/puppet-code_deploy.git',
-  :ref => 'classify_fix'
