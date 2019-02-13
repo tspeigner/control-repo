@@ -11,8 +11,8 @@ plan profile::manage_hosts (
   $tf_pm_ip     = $first[awsmaster][value]
   $tf_pd_ip     = $first[awsdiscovery][value]
   $tf_cd_ip     = $first[awscd4pe][value]
-  $tf_ln_ip     = $first.each[linux_servers][value]
-  $linhost      = $first[linux_servers]
+  # $tf_ln_ip     = $first.each[linux_hostname][value]
+  $linhost      = $first[linux_hostname]
   #$tf_wn_ip     = $first.each[windows_servers][value]
   apply($target) {
     host { $master:
@@ -38,12 +38,12 @@ plan profile::manage_hosts (
       ip           => $tf_cd_ip,
     }
   }
-  apply($target) {
-    host { $linhost:
-      ensure       => present,
-      name         => $linhost,
-      host_aliases => ["${linhost}.${domain}"],
-      ip           => $tf_ln_ip,
-    }
-  }
+  # apply($target) {
+  #   host { $linhost:
+  #     ensure       => present,
+  #     name         => $linhost,
+  #     host_aliases => ["${linhost}.${domain}"],
+  #     ip           => $tf_ln_ip,
+  #   }
+  # }
 }
