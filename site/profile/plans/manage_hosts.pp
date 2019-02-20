@@ -11,8 +11,9 @@ plan profile::manage_hosts (
   $tf_pm_ip     = $first[awsmaster][value]
   $tf_pd_ip     = $first[awsdiscovery][value]
   $tf_cd_ip     = $first[awscd4pe][value]
-  # $tf_ln_ip     = $first.each[linux_hostname][value]
   $linhost      = $first[linux_hostname]
+  #$tf_ln_ip     = $linhost.each[linux_hostname][value]
+  #$linhost      = $first[linux_hostname]
   #$tf_wn_ip     = $first.each[windows_servers][value]
   apply($target) {
     host { $master:
