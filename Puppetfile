@@ -69,29 +69,50 @@ mod 'herculesteam-augeasproviders_sysctl', '2.2.0'
 mod 'hunner-wordpress', '1.0.0'
 mod 'ipcrm-echo', '0.1.5'
 mod 'jdowning-rbenv', '2.2.0'
+<<<<<<< HEAD
+=======
+mod 'puppet-selinux', '1.6.1'
+mod 'autostructure-auditpol', '1.0.0'
+>>>>>>> b1261af5e9b1debeaa4c8c427ea6bf5c28d30750
 mod 'jpadams-puppet_vim_env', '2.3.0'
 mod 'jriviere-windows_ad', '0.3.2'
 mod 'kogitoapp-gitea', '1.0.4'
 mod 'lwf-remote_file', '1.1.3'
+<<<<<<< HEAD
 mod 'nexcess-auditd', '2.0.0'
 mod 'puppet-archive', '3.2.1'
+=======
+mod 'puppet-php', '6.0.2'
+mod 'nexcess-auditd', '2.0.0'
+>>>>>>> b1261af5e9b1debeaa4c8c427ea6bf5c28d30750
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppet-hiera', '3.3.0'
 mod 'puppet-nginx', '0.7.1'
 mod 'puppet-rabbitmq', '8.2.2'
 mod 'puppet-splunk', '5.1.0'
+<<<<<<< HEAD
+=======
+mod 'puppet-archive', '3.2.1'
+>>>>>>> b1261af5e9b1debeaa4c8c427ea6bf5c28d30750
 mod 'puppet-windows_env', '2.3.0'
 mod 'puppet-windows_firewall', '1.1.0'
 mod 'puppet-windowsfeature', '2.1.0'
 mod 'reidmv-unzip', '0.1.2'
 mod 'sensu-sensu', '2.52.0'
 mod 'stahnma-epel', '1.3.1'
+<<<<<<< HEAD
+=======
+mod 'puppet-python', '2.2.2'
+>>>>>>> b1261af5e9b1debeaa4c8c427ea6bf5c28d30750
 mod 'thias-sysctl', '1.0.6'
 mod 'trlinkin-domain_membership', '1.1.2'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
 mod 'yelp-uchiwa', '2.0.0'
+<<<<<<< HEAD
 mod 'puppet-python', '2.2.2'
+=======
+>>>>>>> b1261af5e9b1debeaa4c8c427ea6bf5c28d30750
 mod 'thekevjames-homebrew', '1.8.3'
 
 mod 'puppet_module',
@@ -141,6 +162,7 @@ mod 'puppetlabs-puppet_conf', '0.3.0'
 mod 'puppetlabs-python_task_helper', '0.2.0'
 mod 'puppetlabs-ruby_task_helper', '0.3.0'
 
+<<<<<<< HEAD
 # If we don't list these modules explicitly, r10k will purge them
 mod 'canary', local: true
 mod 'aggregate', local: true
@@ -148,3 +170,9 @@ mod 'puppetdb_fact', local: true
 mod 'install_puppet_gems', local: true
 mod 'install_packages', local: true
 mod 'manage_hosts', local: true
+=======
+mod 'install_puppet_gem', local: true
+mod 'manage_hosts', local: true
+mod 'rolling_updates', local: true
+
+>>>>>>> b1261af5e9b1debeaa4c8c427ea6bf5c28d30750
