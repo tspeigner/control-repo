@@ -23,7 +23,6 @@ class profile::platform::baseline (
     'windows': {
       include ::profile::platform::baseline::windows
     }
-    x
     default: {
       fail('Unsupported operating system!')
     }
