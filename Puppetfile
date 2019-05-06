@@ -75,8 +75,6 @@ mod 'jpadams-puppet_vim_env', '2.3.0'
 mod 'jriviere-windows_ad', '0.3.2'
 mod 'kogitoapp-gitea', '1.0.4'
 mod 'lwf-remote_file', '1.1.3'
-mod 'nexcess-auditd', '2.0.0'
-mod 'puppet-archive', '3.2.1'
 mod 'puppet-php', '6.0.2'
 mod 'nexcess-auditd', '2.0.0'
 mod 'puppet-gitlab', '2.1.0'
@@ -91,7 +89,6 @@ mod 'puppet-windowsfeature', '2.1.0'
 mod 'reidmv-unzip', '0.1.2'
 mod 'sensu-sensu', '2.52.0'
 mod 'stahnma-epel', '1.3.1'
-mod 'puppet-python', '2.2.2'
 mod 'trlinkin-domain_membership', '1.1.2'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
@@ -154,5 +151,4 @@ mod 'install_puppet_gems', local: true
 mod 'install_packages', local: true
 mod 'manage_hosts', local: true
 mod 'install_puppet_gem', local: true
-mod 'manage_hosts', local: true
 mod 'rolling_updates', local: true
