@@ -27,4 +27,5 @@ class profile::platform::baseline_as (
 # If env = dev and plat = linux == profile::platform::baseline::linux::dev
 # This is interpolated in the 'include' below
   notify{"The value is: ${plat}": }
+  notice("The value of plat is: ${plat}")
 }
