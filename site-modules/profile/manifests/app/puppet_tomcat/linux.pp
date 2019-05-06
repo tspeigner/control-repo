@@ -25,7 +25,7 @@ class profile::app::puppet_tomcat::linux (
 
   tomcat::instance{ "tomcat${tomcat_version}":
     install_from_source    => true,
-    source_url             => "https://s3.amazonaws.com/saleseng/files/tomcat/apache-tomcat-8.0.44.tar.gz",
+    source_url             => 'https://s3.amazonaws.com/saleseng/files/tomcat/apache-tomcat-8.0.44.tar.gz',
     #source_url             => "http://${::puppet_server}:81/tomcat/apache-tomcat-${tomcat_version}.tar.gz",
     source_strip_first_dir => true,
     catalina_base          => $catalina_dir,
@@ -60,16 +60,6 @@ class profile::app::puppet_tomcat::linux (
       subscribe     => Tomcat::War["plsample-${plsample_version}.war"],
     }
 
-  } else {
-
-    tomcat::instance{ "tomcat${tomcat_version}":
-      install_from_source    => true,
-      source_url             => "http://${::puppet_server}:81/tomcat/apache-tomcat-${tomcat_version}.tar.gz",
-      source_strip_first_dir => true,
-      catalina_base          => $catalina_dir,
-      catalina_home          => $catalina_dir,
-    }
-
   }
 
   $tomcat_other_versions.each |String $version| {
@@ -100,5 +90,3 @@ class profile::app::puppet_tomcat::linux (
     }
 
   }
-
-}
