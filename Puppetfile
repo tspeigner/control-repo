@@ -3,7 +3,7 @@ forge 'http://forge.puppetlabs.com'
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 mod 'tspy-win_apache', '0.1.2'
-mod 'cohdjn-cisecurity', '0.6.1'
+mod 'cohdjn-cisecurity', '0.7.1'
 mod 'puppetlabs-exec', '0.1.0'
 mod 'puppetlabs-resource', '0.1.0'
 mod 'puppetlabs-inifile', '1.6.0'
