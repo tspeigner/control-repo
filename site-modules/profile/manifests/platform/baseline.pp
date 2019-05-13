@@ -43,7 +43,7 @@ class profile::platform::baseline (
     /^10\.0\.24\.(2(4[3-5]))$/   => 'uat',
     # If a node has an IP in the range 10.0.24.233-235 it's in the Prod VPC
     /^10\.0\.24\.(2(3[3-5]))$/   => 'prod',
-    default => fail('Environment does not exist'),
+    default => 'Environment does not exist',
   }
   notify { 'plat and env':
     message => "${plat} and ${env}"
