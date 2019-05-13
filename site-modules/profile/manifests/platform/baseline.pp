@@ -19,31 +19,15 @@ class profile::platform::baseline (
   }
 
   # OS Specific
-  # case $::kernel {
-  #   'windows': {
-  #     include ::profile::platform::baseline::windows
-  #   }
-  #   'Linux':   {
-  #     include ::profile::platform::baseline::linux
-  #   }
-  #   default: {
-  #     fail('Unsupported operating system!')
-  #   }
-  # }
-  $plat = $facts.get('os.family') ? {
-    #If os.family == 'windows' then $plat = 'windows', default is 'linux'
-    /windows/ => 'windows',
-    default   => 'linux'
+  case $::kernel {
+    'windows': {
+      include ::profile::platform::baseline::windows
+    }
+    'Linux':   {
+      include ::profile::platform::baseline::linux
+    }
+    default: {
+      fail('Unsupported operating system!')
+    }
   }
-
-  $env = $facts.get('ipaddress') ? {
-    # If a node has an IP in the range 10.0.24.253-255 it's in the Dev VPC
-    /^10\.4\.243\.(2(5[3-5]))$/   => 'production',
-    # If a node has an IP in the range 10.0.24.243-245 it's in the UAT VPC
-    /^10\.0\.24\.(2(4[3-5]))$/   => 'uat',
-    # If a node has an IP in the range 10.0.24.233-235 it's in the Prod VPC
-    /^10\.0\.24\.(2(3[3-5]))$/   => 'prod',
-    default => 'Environment does not exist',
-  }
-  include "profile::platform::baseline::${plat}::${env}"
 }
