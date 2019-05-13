@@ -38,7 +38,7 @@ class profile::platform::baseline (
 
   $env = $facts.get('ipaddress') ? {
     # If a node has an IP in the range 10.0.24.253-255 it's in the Dev VPC
-    /^10\.0\.24\.(2(5[3-5]))$/   => 'dev',
+    /^10\.4\.243\.(2(5[3-5]))$/   => 'dev',
     # If a node has an IP in the range 10.0.24.243-245 it's in the UAT VPC
     /^10\.0\.24\.(2(4[3-5]))$/   => 'uat',
     # If a node has an IP in the range 10.0.24.233-235 it's in the Prod VPC
