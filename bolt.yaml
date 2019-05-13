@@ -1,0 +1,3 @@
+modulepath: '/Users/tommy/gDrive/code/control-repo-1/modules:/Users/tommy/gDrive/code/control-repo-1/site-modules:/Users/tspeigner/code/control-repo-1/modules:/Users/tspeigner/code/control-repo-1/site-modules'
+concurrency: 10
+format: human

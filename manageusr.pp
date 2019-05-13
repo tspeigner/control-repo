@@ -1,0 +1,3 @@
+user { 'tls':
+  ensure     => 'absent',
+}

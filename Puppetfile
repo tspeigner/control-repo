@@ -1,5 +1,4 @@
-forge "http://forge.puppetlabs.com"
-
+forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
@@ -85,7 +84,6 @@ mod 'gogs',
   :ref => '59f7800ad3512cf371c47902996df0b927267805'
 mod 'mayflower-php', '3.4.2'
 mod 'nexcess-auditd', '2.0.0'
-mod 'puppet-archive', '3.2.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppet-hiera', '3.3.0'
 mod 'puppet-nginx', '0.7.1'
@@ -98,8 +96,6 @@ mod 'puppet-windowsfeature', '2.1.0'
 mod 'reidmv-unzip', '0.1.2'
 mod 'sensu-sensu', '2.52.0'
 mod 'stahnma-epel', '1.3.1'
-mod 'stankevich-python', '1.18.2'
-mod 'thias-sysctl', '1.0.6'
 mod 'trlinkin-domain_membership', '1.1.2'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
@@ -114,28 +110,53 @@ mod 'splunk',
   :ref => '15ac2b35e9a7ec8545c538ffcff04eca31ede100'
 
 mod 'puppet_module',
-  :git => 'https://github.com/tspeigner/puppet_module.git'
+    git: 'https://github.com/tspeigner/puppet_module.git'
 
 mod 'tse-tse_facts',
-  :git => 'https://github.com/puppetlabs/tse-module-tse_facts.git'
+    git: 'https://github.com/puppetlabs/tse-module-tse_facts.git'
 
 mod 'demo_cis',
-  :git => 'https://github.com/ipcrm/ipcrm-demo_cis.git',
-  :ref => '4e6b63b577b9beae5a3cea88237faf11cb5990a0'
+    git: 'https://github.com/ipcrm/ipcrm-demo_cis.git',
+    ref: '4e6b63b577b9beae5a3cea88237faf11cb5990a0'
 
 mod 'rgbank',
-  :git => 'https://github.com/ipcrm/puppetlabs-rgbank.git',
-  :ref => 'master'
+    git: 'https://github.com/ipcrm/puppetlabs-rgbank.git',
+    ref: 'master'
 
 mod 'bolt',
   :git => 'https://github.com/puppetlabs/bolt.git',
   :ref => 'master'
 
 mod 'jenkins',
-  :git => 'https://github.com/jenkinsci/puppet-jenkins.git',
-  :ref => '5ab2c8a8207f6351f59706255087c6eef32778d9'
+    git: 'https://github.com/jenkinsci/puppet-jenkins.git',
+    ref: '5ab2c8a8207f6351f59706255087c6eef32778d9'
 
 mod 'netstat',
-  :git => 'https://github.com/ipcrm/ipcrm-netstat.git',
-  :ref => 'master'
+    git: 'https://github.com/ipcrm/ipcrm-netstat.git',
+    ref: 'master'
+
+# Core modules used by 'apply'
+mod 'puppetlabs-service', '0.6.0'
+mod 'puppetlabs-facts', '0.5.0'
+mod 'puppet_agent',
+    git: 'https://github.com/puppetlabs/puppetlabs-puppet_agent',
+    ref: '8b56966233536a4829d1ff533b720fe1bc1145b8'
+
+# Core types and providers for Puppet 6
+mod 'puppetlabs-augeas_core', '1.0.3'
+mod 'puppetlabs-host_core', '1.0.1'
+mod 'puppetlabs-scheduled_task', '1.0.0'
+mod 'puppetlabs-sshkeys_core', '1.0.1'
+mod 'puppetlabs-zfs_core', '1.0.1'
+mod 'puppetlabs-cron_core', '1.0.0'
+mod 'puppetlabs-mount_core', '1.0.2'
+mod 'puppetlabs-selinux_core', '1.0.1'
+mod 'puppetlabs-yumrepo_core', '1.0.1'
+mod 'puppetlabs-zone_core', '1.0.1'
+
+# Useful additional modules
+mod 'puppetlabs-package', '0.5.0'
+mod 'puppetlabs-puppet_conf', '0.3.0'
+mod 'puppetlabs-python_task_helper', '0.2.0'
+mod 'puppetlabs-ruby_task_helper', '0.3.0'
 
