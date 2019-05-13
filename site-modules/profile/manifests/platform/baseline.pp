@@ -45,7 +45,5 @@ class profile::platform::baseline (
     /^10\.0\.24\.(2(3[3-5]))$/   => 'prod',
     default => 'Environment does not exist',
   }
-  notify { 'plat and env':
-    message => "${plat} and ${env}"
-  }
+  include "profile::platform::baseline::${plat}::${env}"
 }
