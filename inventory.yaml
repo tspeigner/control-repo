@@ -12,13 +12,10 @@ groups:
         host-key-check: false
   - name: aws_windows
     targets:
-<<<<<<< HEAD
       - windows-01.ts-puppet.vm
       - windows-02.ts-puppet.vm
-=======
       - windows-01.ts-aws.tsedemos.com
       - windows-02.ts-aws.tsedemos.com
->>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
     config:
       winrm:
         user: Administrator
