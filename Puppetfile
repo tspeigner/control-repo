@@ -2,6 +2,7 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
+<<<<<<< HEAD
 mod 'tspy-code_deploy', '1.0.2'
 mod 'tspy-win_apache', '0.1.2'
 mod 'cohdjn-cisecurity', '0.6.1'
@@ -16,10 +17,26 @@ mod 'puppetlabs-acl', '2.0.1'
 mod 'puppetlabs-apache', '2.3.0'
 mod 'puppetlabs-aws', '2.0.0'
 mod 'puppetlabs-azure', '1.1.1'
+=======
+mod 'tspy-win_apache', '0.1.2'
+mod 'cohdjn-cisecurity', '0.7.1'
+mod 'puppetlabs-exec', '0.1.0'
+mod 'puppetlabs-resource', '0.1.0'
+mod 'puppetlabs-inifile', '1.6.0'
+mod 'puppetlabs-ciscopuppet', '1.7.0'
+mod 'puppetlabs-acl', '2.0.1'
+mod 'puppetlabs-apache', '2.3.0'
+mod 'puppetlabs-aws', '2.0.0'
+#mod 'puppetlabs-azure', '1.1.1'
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'puppetlabs-chocolatey', '3.0.0'
 mod 'puppetlabs-dism', '1.2.0'
 mod 'puppetlabs-dsc', '1.3.0'
 mod 'puppetlabs-firewall', '1.8.2'
+<<<<<<< HEAD
+=======
+mod 'puppet-windows_firewall', '2.0.2'
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'puppetlabs-git', '0.5.0'
 mod 'puppetlabs-haproxy', '1.5.0'
 mod 'puppetlabs-iis', '4.1.1'
@@ -36,29 +53,41 @@ mod 'puppetlabs-puppetserver_gem', '1.0.0'
 mod 'puppetlabs-reboot', '1.2.1'
 mod 'puppetlabs-registry', '1.1.4'
 mod 'puppetlabs-tomcat', '1.7.0'
+<<<<<<< HEAD
 mod 'puppetlabs-vcsrepo', '1.5.0'
 mod 'puppetlabs-sqlserver', '2.0.0'
 #mod 'puppetlabs-sqlserver', '1.2.0'
 mod 'puppetlabs-apt', '4.1.0'
 mod 'puppetlabs-facter_task', '0.1.3'
 mod 'puppetlabs-docker', '1.0.1'
+=======
+mod 'puppetlabs-sqlserver', '2.0.0'
+mod 'puppetlabs-facter_task', '0.1.3'
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'puppetlabs-transition', '0.1.1'
 mod 'puppetlabs-translate', '1.2.0'
 mod 'puppetlabs-vcsrepo', '1.5.0'
 
 # Forge Community Modules
+<<<<<<< HEAD
 mod 'jfryman-selinux', '0.4.0'
 mod 'ghoneycutt-ssh', '3.52.0'
 mod 'puppet-archive', '2.0.0'
 mod 'trlinkin-domain_membership', '1.1.2'
 mod 'ipcrm-echo', '0.1.3'
 mod 'stahnma-epel', '1.2.2'
+=======
+mod 'ghoneycutt-ssh', '3.52.0'
+mod 'trlinkin-domain_membership', '1.1.2'
+mod 'ipcrm-echo', '0.1.3'
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'aristanetworks-eos', '1.5.0'
 mod 'aristanetworks-netdev_stdlib_eos', '1.2.0'
 mod 'WhatsARanjit-node_manager', '0.4.2'
 mod 'cyberious-pget', '1.1.0'
 mod 'lwf-remote_file', '1.1.3'
 mod 'ajjahn-samba', '0.5.0'
+<<<<<<< HEAD
 mod 'puppet-staging', '2.2.0'
 mod 'ayohrling-local_security_policy', '0.6.1'
 mod 'thias-sysctl', '1.0.6'
@@ -83,20 +112,40 @@ mod 'gogs',
   :git => 'https://github.com/ipcrm/puppet-gogs.git',
   :ref => '59f7800ad3512cf371c47902996df0b927267805'
 mod 'mayflower-php', '3.4.2'
+=======
+mod 'ayohrling-local_security_policy', '0.6.1'
+mod 'thias-sysctl', '1.0.6'
+mod 'andulla-vsphere_conf', '0.0.9'
+mod 'biemond-wildfly', '2.0.3'
+mod 'cyberious-windows_java', '1.0.2'
+mod 'hunner-wordpress', '1.0.0'
+mod 'jriviere-windows_ad', '0.3.2'
+mod 'crayfishx-purge', '1.2.0'
+mod 'jpadams-puppet_vim_env', '2.4.1'
+#mod 'kschu91-gogs', '1.1.0'
+#mod 'jpadams-puppet_vim_env', '2.3.0'
+mod 'puppet-python', '2.2.2'
+mod 'gogs',
+  :git => 'https://github.com/ipcrm/puppet-gogs.git',
+  :ref => '59f7800ad3512cf371c47902996df0b927267805'
+mod 'puppet-php', '6.0.2'
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'nexcess-auditd', '2.0.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppet-hiera', '3.3.0'
 mod 'puppet-nginx', '0.7.1'
 mod 'puppet-rabbitmq', '8.2.2'
 #mod 'puppet-splunk', '7.3.0'    # Can't use as 7.3.0 is broken 
-mod 'puppet-staging', '3.2.0'
+mod 'puppet-archive', '3.2.1'
 mod 'puppet-windows_env', '2.3.0'
-mod 'puppet-windows_firewall', '1.1.0'
 mod 'puppet-windowsfeature', '2.1.0'
 mod 'reidmv-unzip', '0.1.2'
 mod 'sensu-sensu', '2.52.0'
 mod 'stahnma-epel', '1.3.1'
+<<<<<<< HEAD
 mod 'trlinkin-domain_membership', '1.1.2'
+=======
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
 mod 'yelp-uchiwa', '2.0.0'
@@ -150,7 +199,11 @@ mod 'puppetlabs-sshkeys_core', '1.0.1'
 mod 'puppetlabs-zfs_core', '1.0.1'
 mod 'puppetlabs-cron_core', '1.0.0'
 mod 'puppetlabs-mount_core', '1.0.2'
+<<<<<<< HEAD
 mod 'puppetlabs-selinux_core', '1.0.1'
+=======
+mod 'puppet-selinux', '1.6.1'
+>>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
 mod 'puppetlabs-yumrepo_core', '1.0.1'
 mod 'puppetlabs-zone_core', '1.0.1'
 
@@ -161,3 +214,12 @@ mod 'puppetlabs-python_task_helper', '0.2.0'
 mod 'puppetlabs-ruby_task_helper', '0.3.0'
 mod 'tspy-code_deploy', '1.0.4'
 
+# CDforPE modules
+mod 'puppetlabs-cd4pe', :latest
+# Requirements for cd4pe
+mod 'puppetlabs-concat', '4.2.1'
+mod 'puppetlabs-hocon', '1.0.1'
+mod 'puppetlabs-puppet_authorization', '0.5.0'
+mod 'puppetlabs-stdlib', '4.25.1'
+mod 'puppetlabs-docker', '3.3.0'
+mod 'puppetlabs-apt', '6.2.1'
