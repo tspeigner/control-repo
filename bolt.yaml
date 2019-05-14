@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-modulepath: '/Users/tommy/gDrive/code/control-repo-1/modules:/Users/tommy/gDrive/code/control-repo-1/site-modules:/Users/tspeigner/code/control-repo-1/modules:/Users/tspeigner/code/control-repo-1/site-modules'
-concurrency: 10
-format: human
-=======
 modulepath: "~/gDrive/code/control-repo/modules:~/gDrive/code/control-repo/site-modules/:~/.puppetlabs/bolt-code/modules:~/.puppetlabs/bolt-code/site-modules"
 inventoryfile: "./inventory.yaml"
 concurrency: 10
@@ -11,4 +6,3 @@ ssh:
   host-key-check: false
   private-key: ~/.ssh/id_rsa
   user: centos
->>>>>>> 24d2155d538cb473c37a802bd2522530fc52872f
