@@ -140,6 +140,8 @@ mod 'puppetlabs-puppet_conf', '0.3.0'
 mod 'puppetlabs-python_task_helper', '0.2.0'
 mod 'puppetlabs-ruby_task_helper', '0.3.0'
 mod 'tspy-code_deploy', '1.0.4'
+mod 'beersy-napalm', '0.1.0'
+mod 'albatrossflavour-os_patching', '0.11.1'
 
 # CDforPE modules
 mod 'puppetlabs-cd4pe', :latest
