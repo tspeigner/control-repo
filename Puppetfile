@@ -121,6 +121,8 @@ mod 'puppetlabs-facts', '0.5.0'
 mod 'puppet_agent',
     git: 'https://github.com/puppetlabs/puppetlabs-puppet_agent',
     ref: '8b56966233536a4829d1ff533b720fe1bc1145b8'
+mod 'awskit',
+    git: 'https://github.com/puppetlabs-seteam/awskit.git'
 
 # Core types and providers for Puppet 6
 mod 'puppetlabs-augeas_core', '1.0.3'
@@ -131,7 +133,7 @@ mod 'puppetlabs-zfs_core', '1.0.1'
 mod 'puppetlabs-cron_core', '1.0.0'
 mod 'puppetlabs-mount_core', '1.0.2'
 mod 'puppet-selinux', '1.6.1'
-mod 'puppetlabs-yumrepo_core', '1.0.1'
+mod 'puppetlabs-yumrepo_core', '1.0.3'
 mod 'puppetlabs-zone_core', '1.0.1'
 
 # Useful additional modules
@@ -152,3 +154,8 @@ mod 'puppetlabs-puppet_authorization', '0.5.0'
 mod 'puppetlabs-stdlib', '4.25.1'
 mod 'puppetlabs-docker', '3.3.0'
 mod 'puppetlabs-apt', '6.2.1'
+
+# Bolt workshop
+mod 'workshop_deploy',
+  :git => 'https://github.com/puppetlabs-seteam/workshop_deploy.git',
+  :ref => 'master'
