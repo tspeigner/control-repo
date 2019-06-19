@@ -2,65 +2,73 @@ forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
-mod 'tspy-win_apache', '0.1.2'
-mod 'cohdjn-cisecurity', '0.7.1'
+# This is a Puppetfile, which describes a collection of Puppet modules.
+# For format and syntax examples, see:
+#
+# https://docs.puppet.com/pe/latest/cmgmt_puppetfile.html
+#
+# In addition to the component modules listed here, the 'site' directory
+# includes 'role' and 'profile' modules. The 'role' module contains
+# Puppet classes that constitute a machine role or business function.
+
+forge "https://forgeapi.puppetlabs.com"
+
+# Forge Modules from Puppet
+mod 'puppetlabs-aws', '2.1.0'
+mod 'puppetlabs-apache', '5.0.0'
+mod 'puppetlabs-chocolatey', '2.0.0'
+mod 'puppetlabs-powershell', '2.2.0'
+mod 'puppetlabs-registry', '2.0.2'
+mod 'puppetlabs-inifile', '1.6.0'
+mod 'puppetlabs-puppetserver_gem', '0.2.0'
+mod 'puppetlabs-motd', '1.4.0'
+mod 'puppetlabs-java', '2.1.0'
+#mod 'puppetlabs-puppet_agent', '1.4.1'
 mod 'puppetlabs-exec', '0.1.0'
 mod 'puppetlabs-resource', '0.1.0'
-mod 'puppetlabs-inifile', '1.6.0'
-mod 'puppetlabs-ciscopuppet', '1.7.0'
-mod 'puppetlabs-acl', '2.0.1'
-mod 'puppetlabs-apache', '2.3.0'
-mod 'puppetlabs-aws', '2.0.0'
-#mod 'puppetlabs-azure', '1.1.1'
-mod 'puppetlabs-chocolatey', '3.0.0'
-mod 'puppetlabs-dism', '1.2.0'
-mod 'puppetlabs-dsc', '1.3.0'
-mod 'puppetlabs-firewall', '1.8.2'
-mod 'puppet-windows_firewall', '2.0.2'
-mod 'puppetlabs-git', '0.5.0'
-mod 'puppetlabs-haproxy', '1.5.0'
-mod 'puppetlabs-iis', '4.1.1'
-mod 'puppetlabs-java', '2.0.0'
-mod 'puppetlabs-limits', '0.1.0'
-mod 'puppetlabs-motd', '1.4.0'
-mod 'puppetlabs-mount_iso', '1.0.0'
-mod 'puppetlabs-mysql', '3.11.0'
-mod 'puppetlabs-netdev_stdlib', '0.12.0'
-mod 'puppetlabs-ntp', '6.2.0'
-mod 'puppetlabs-pipelines', '1.0.0'
-mod 'puppetlabs-powershell', '2.1.0'
-mod 'puppetlabs-puppetserver_gem', '1.0.0'
-mod 'puppetlabs-reboot', '1.2.1'
-mod 'puppetlabs-registry', '1.1.4'
-mod 'puppetlabs-tomcat', '1.7.0'
-mod 'puppetlabs-sqlserver', '2.0.0'
-mod 'puppetlabs-facter_task', '0.1.3'
 mod 'puppetlabs-transition', '0.1.1'
-mod 'puppetlabs-translate', '1.2.0'
-mod 'puppetlabs-vcsrepo', '1.5.0'
+mod 'puppetlabs-mysql', '5.1.0'
+mod 'puppetlabs-gcc', '0.3.0'
+mod 'puppetlabs-reboot', '2.0.0'
+mod 'puppetlabs-ntp', '7.4.0'
+mod 'puppetlabs-tagmail', '2.5.0'
+mod 'puppetlabs-firewall', '1.14.0'
+#mod 'puppet-iis', '2.0.2'
+mod 'puppetlabs-iis', '4.5.0'
+mod 'puppetlabs-bolt_shim', '0.3.0'
+
+mod 'puppet-windows_firewall', '2.0.1'
+mod 'puppet-windowsfeature', '3.2.2'
+mod 'puppet-nginx', '0.11.0'
+mod 'puppet-rabbitmq', '8.2.2'
+mod 'puppet-rundeck', '5.0.0'
 
 # Forge Community Modules
-mod 'ghoneycutt-ssh', '3.52.0'
-mod 'trlinkin-domain_membership', '1.1.2'
-mod 'ipcrm-echo', '0.1.3'
-mod 'aristanetworks-eos', '1.5.0'
-mod 'aristanetworks-netdev_stdlib_eos', '1.2.0'
-mod 'WhatsARanjit-node_manager', '0.4.2'
-mod 'cyberious-pget', '1.1.0'
-mod 'lwf-remote_file', '1.1.3'
-mod 'ajjahn-samba', '0.5.0'
-mod 'ayohrling-local_security_policy', '0.6.1'
-mod 'thias-sysctl', '1.0.6'
-mod 'andulla-vsphere_conf', '0.0.9'
-mod 'biemond-wildfly', '2.0.3'
-mod 'cyberious-windows_java', '1.0.2'
-mod 'hunner-wordpress', '1.0.0'
-mod 'jriviere-windows_ad', '0.3.2'
+
+mod 'beersy-hiera_lookup', '0.1.0'
+mod 'crayfishx-firewalld', '3.1.4'
+mod 'liamjbennett-win_facts', '0.0.2'
+mod 'maestrodev-maven', '1.4.0'
+mod 'computology-packagecloud', '0.3.2' 
+mod 'lboynton-rpmforge', '0.1.3'
+mod 'gildas-homebrew', '0.4.16'
 mod 'crayfishx-purge', '1.2.0'
-mod 'jpadams-puppet_vim_env', '2.4.1'
-#mod 'kschu91-gogs', '1.1.0'
-#mod 'jpadams-puppet_vim_env', '2.3.0'
-mod 'puppet-python', '2.2.2'
+mod 'WhatsARanjit-node_manager', '0.4.2'
+#mod 'maestrodev-wget', '1.7.3'
+#mod 'stankevich-python', '1.18.2'
+mod 'beersy-taskulator', '0.3.0'
+mod 'beersy-pe_code_manager_easy_setup'
+mod 'lwf-remote_file', '1.1.3'  
+mod 'darin-zypprepo', '1.0.2'
+mod 'camptocamp-systemd', '0.4.0'
+mod 'nate-purge_node', '1.3.0'
+mod 'sensu-sensu', '3.3.0'
+mod 'puppet-redis', '4.0.0'
+mod 'yelp-uchiwa', '2.0.0'
+mod 'herculesteam-augeasproviders_core', '2.1.4'
+mod 'herculesteam-augeasproviders_sysctl', '2.2.0'
+mod 'herculesteam-augeasproviders_ssh', '2.5.0'
+mod 'reidmv-taskplan', '0.1.2'
 mod 'gogs',
   :git => 'https://github.com/ipcrm/puppet-gogs.git',
   :ref => '59f7800ad3512cf371c47902996df0b927267805'
@@ -68,18 +76,13 @@ mod 'puppet-php', '6.0.2'
 mod 'nexcess-auditd', '2.0.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppet-hiera', '3.3.0'
-mod 'puppet-nginx', '0.7.1'
-mod 'puppet-rabbitmq', '8.2.2'
 #mod 'puppet-splunk', '7.3.0'    # Can't use as 7.3.0 is broken 
 mod 'puppet-archive', '3.2.1'
 mod 'puppet-windows_env', '2.3.0'
-mod 'puppet-windowsfeature', '2.1.0'
 mod 'reidmv-unzip', '0.1.2'
-mod 'sensu-sensu', '2.52.0'
 mod 'stahnma-epel', '1.3.1'
 mod 'tse-time', '1.0.1'
 mod 'tse-winntp', '1.0.1'
-mod 'yelp-uchiwa', '2.0.0'
 mod 'abuxton-pdk', '0.2.0'
 mod 'jdowning-rbenv', '2.4.0'
 mod 'tkishel-system_gem', '1.1.1'
@@ -94,10 +97,6 @@ mod 'puppet_module',
 
 mod 'tse-tse_facts',
     git: 'https://github.com/puppetlabs/tse-module-tse_facts.git'
-
-mod 'demo_cis',
-    git: 'https://github.com/ipcrm/ipcrm-demo_cis.git',
-    ref: '4e6b63b577b9beae5a3cea88237faf11cb5990a0'
 
 mod 'rgbank',
     git: 'https://github.com/ipcrm/puppetlabs-rgbank.git',
@@ -121,8 +120,6 @@ mod 'puppetlabs-facts', '0.5.0'
 mod 'puppet_agent',
     git: 'https://github.com/puppetlabs/puppetlabs-puppet_agent',
     ref: '8b56966233536a4829d1ff533b720fe1bc1145b8'
-mod 'awskit',
-    git: 'https://github.com/puppetlabs-seteam/awskit.git'
 
 # Core types and providers for Puppet 6
 mod 'puppetlabs-augeas_core', '1.0.3'
@@ -135,6 +132,7 @@ mod 'puppetlabs-mount_core', '1.0.2'
 mod 'puppet-selinux', '1.6.1'
 mod 'puppetlabs-yumrepo_core', '1.0.3'
 mod 'puppetlabs-zone_core', '1.0.1'
+mod 'puppetlabs-stdlib', '5.0.0'
 
 # Useful additional modules
 mod 'puppetlabs-package', '0.5.0'
@@ -151,11 +149,13 @@ mod 'puppetlabs-cd4pe', :latest
 mod 'puppetlabs-concat', '4.2.1'
 mod 'puppetlabs-hocon', '1.0.1'
 mod 'puppetlabs-puppet_authorization', '0.5.0'
-mod 'puppetlabs-stdlib', '4.25.1'
 mod 'puppetlabs-docker', '3.3.0'
-mod 'puppetlabs-apt', '6.2.1'
+mod 'puppetlabs-apt', '7.0.1'
 
 # Bolt workshop
 mod 'workshop_deploy',
   :git => 'https://github.com/puppetlabs-seteam/workshop_deploy.git',
+  :ref => 'master'
+mod 'awskit',
+  :git => 'https://github.com/puppetlabs-seteam/awskit.git',
   :ref => 'master'
