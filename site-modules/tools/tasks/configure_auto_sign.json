@@ -1,0 +1,10 @@
+{
+    "description": "Configure Auto Signing on a Puppet Master",
+    "input_method": "stdin",
+    "parameters": {
+        "entries": {
+            "description": "The server(s) to be added to the autosign.conf file.",
+            "type": "Array[1]"
+        }
+    }
+}

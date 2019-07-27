@@ -1,0 +1,61 @@
+groups:
+  - name: master
+    nodes:
+      - tlsnetmaster0.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/training.pem
+  - name: gitlab
+    nodes:
+      - tlsnetgitlab0.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/training.pem
+  - name: lnxstudents
+    nodes:
+      - tlsnetnix0.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/student.pem
+  - name: winstudents
+    nodes:
+      - tlsnetwin0.classroom.puppet.com
+    config:
+      transport: winrm
+      winrm:
+        user: puppetinstructor
+        password: REPLACEME
+        ssl: false
+  - name: allwindows
+    nodes:
+      - tlsnetwin0.classroom.puppet.com
+    config:
+      transport: winrm
+      winrm:
+        user: puppetinstructor
+        password: REPLACEME
+        ssl: false
+  - name: alllinux
+    nodes:
+      - tlsnetgitlab0.classroom.puppet.com
+      - tlsnetmaster0.classroom.puppet.com
+      - tlsnetnix0.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/student.pem
