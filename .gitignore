@@ -1,5 +1,6 @@
 hieradata/nodes/example-puppet-master.yaml
 /modules
+!/modules/vsphere
 /build
 /.tmp
 /.librarian
