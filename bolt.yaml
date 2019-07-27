@@ -1,8 +1,8 @@
-modulepath: "/etc/puppetlabs/code/modules:/Users/tspeigner/repos/:/Users/tspeigner/repos/control-repo/modules:/Users/tspeigner/repos/control-repo/site-modules:~/gDrive/code/control-repo/site-modules/:~/.puppetlabs/bolt-code/modules:~/.puppetlabs/bolt-code/site-modules"
+modulepath: "modules:site-modules:$basemodulespath"
 inventoryfile: "./inventory.yaml"
 concurrency: 10
 format: human
 ssh:
   host-key-check: false
-  private-key: ~/.ssh/id_rsa
+  private-key: ~/.ssh/tommy.pem
   user: centos

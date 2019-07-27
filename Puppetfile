@@ -1,5 +1,3 @@
-forge 'http://forge.puppetlabs.com'
-
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 # This is a Puppetfile, which describes a collection of Puppet modules.
@@ -23,7 +21,6 @@ mod 'puppetlabs-inifile', '1.6.0'
 mod 'puppetlabs-puppetserver_gem', '0.2.0'
 mod 'puppetlabs-motd', '1.4.0'
 mod 'puppetlabs-java', '2.1.0'
-#mod 'puppetlabs-puppet_agent', '1.4.1'
 mod 'puppetlabs-exec', '0.1.0'
 mod 'puppetlabs-resource', '0.1.0'
 mod 'puppetlabs-transition', '0.1.1'
@@ -33,15 +30,15 @@ mod 'puppetlabs-reboot', '2.0.0'
 mod 'puppetlabs-ntp', '7.4.0'
 mod 'puppetlabs-tagmail', '2.5.0'
 mod 'puppetlabs-firewall', '1.14.0'
-#mod 'puppet-iis', '2.0.2'
 mod 'puppetlabs-iis', '4.5.0'
 mod 'puppetlabs-bolt_shim', '0.3.0'
-
 mod 'puppet-windows_firewall', '2.0.1'
 mod 'puppet-windowsfeature', '3.2.2'
 mod 'puppet-nginx', '0.11.0'
 mod 'puppet-rabbitmq', '8.2.2'
 mod 'puppet-rundeck', '5.0.0'
+mod 'puppetlabs-vsphere', '1.3.1'
+mod 'puppet-python', '3.0.1'
 
 # Forge Community Modules
 
@@ -51,11 +48,9 @@ mod 'liamjbennett-win_facts', '0.0.2'
 mod 'maestrodev-maven', '1.4.0'
 mod 'computology-packagecloud', '0.3.2' 
 mod 'lboynton-rpmforge', '0.1.3'
-mod 'gildas-homebrew', '0.4.16'
+mod 'thekevjames-homebrew', '1.8.3'
 mod 'crayfishx-purge', '1.2.0'
 mod 'WhatsARanjit-node_manager', '0.4.2'
-#mod 'maestrodev-wget', '1.7.3'
-#mod 'stankevich-python', '1.18.2'
 mod 'beersy-taskulator', '0.3.0'
 mod 'beersy-pe_code_manager_easy_setup'
 mod 'lwf-remote_file', '1.1.3'  
@@ -76,7 +71,6 @@ mod 'puppet-php', '6.0.2'
 mod 'nexcess-auditd', '2.0.0'
 mod 'puppet-gitlab', '2.1.0'
 mod 'puppet-hiera', '3.3.0'
-#mod 'puppet-splunk', '7.3.0'    # Can't use as 7.3.0 is broken 
 mod 'puppet-archive', '3.2.1'
 mod 'puppet-windows_env', '2.3.0'
 mod 'reidmv-unzip', '0.1.2'
@@ -117,9 +111,6 @@ mod 'netstat',
 # Core modules used by 'apply'
 mod 'puppetlabs-service', '0.6.0'
 mod 'puppetlabs-facts', '0.5.0'
-mod 'puppet_agent',
-    git: 'https://github.com/puppetlabs/puppetlabs-puppet_agent',
-    ref: '8b56966233536a4829d1ff533b720fe1bc1145b8'
 
 # Core types and providers for Puppet 6
 mod 'puppetlabs-augeas_core', '1.0.3'
@@ -142,6 +133,8 @@ mod 'puppetlabs-ruby_task_helper', '0.3.0'
 mod 'tspy-code_deploy', '1.0.4'
 mod 'beersy-napalm', '0.1.0'
 mod 'albatrossflavour-os_patching', '0.11.1'
+mod 'danieldreier-autosign'
+mod 'puppetlabs-puppet_agent'
 
 # CDforPE modules
 mod 'puppetlabs-cd4pe', :latest

@@ -1,23 +1,61 @@
-version: 2
 groups:
-  - name: aws_linux
-    targets:
-      - linux-01.ts-aws.tsedemos.com 
-      - linux-02.ts-aws.tsedemos.com
+  - name: master
+    nodes:
+      - tls-demomaster0.classroom.puppet.com
     config:
       transport: ssh
       ssh:
-        user: centos
-        private-key: ~/.ssh/id_rsa
         host-key-check: false
-  - name: aws_windows
-    targets:
-      - windows-01.ts-puppet.vm
-      - windows-02.ts-puppet.vm
-      - windows-01.ts-aws.tsedemos.com
-      - windows-02.ts-aws.tsedemos.com
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/training.pem
+  - name: gitlab
+    nodes:
+      - tls-demogitlab0.classroom.puppet.com
     config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/training.pem
+  - name: lnxstudents
+    nodes:
+      - tls-demonix0.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/student.pem
+  - name: winstudents
+    nodes:
+      - 10.120.0.140
+    config:
+      transport: winrm
       winrm:
-        user: Administrator
-        password: Adm1nistrat0r
+        user: puppetinstructor
+        password: REPLACEME
         ssl: false
+  - name: allwindows
+    nodes:
+      - tls-demowin0.classroom.puppet.com
+    config:
+      transport: winrm
+      winrm:
+        user: puppetinstructor
+        password: REPLACEME
+        ssl: false
+  - name: alllinux
+    nodes:
+      - tls-demonix0.classroom.puppet.com
+      - tls-demogitlab0.classroom.puppet.com
+      - tls-demomaster0.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        host-key-check: false
+        user: centos
+        run-as: root
+        private-key: ~/.ssh/student.pem
