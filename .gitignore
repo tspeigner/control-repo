@@ -21,4 +21,8 @@ log
 .yardoc
 coverage
 .fixtures.yml
+<<<<<<< HEAD
 *-inventory.yaml
+=======
+.onceover
+>>>>>>> 471d57a28ed5f7cb1625849a46cada248fd43426

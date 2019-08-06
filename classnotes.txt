@@ -1,0 +1,23 @@
+Master Instance ID             = "i-07611e814157beb5b"
+        Master Instance AWS DNS        = "ec2-54-186-132-99.us-west-2.compute.amazonaws.com"
+        Gitlab Instance ID             = "i-07a12e341f86d8d5e"
+        Gitlab Instance AWS DNS        = "ec2-34-221-34-128.us-west-2.compute.amazonaws.com"
+        Class Welcome Page             = "https://tls-demo.classroom.puppet.com"
+        Puppet Master Page             = "https://tls-demo-master.classroom.puppet.com"
+        Gitlab Page                    = "https://tls-demo-gitlab.classroom.puppet.com"
+        Discovery Page                 = "https://tls-demo-discovery.classroom.puppet.com"
+        Showoff Page                   = "https://tls-demo-slides.classroom.puppet.com"
+        The Class Type                 = "Demo"
+        The Learndot ClassID           = "tls-demo"
+        Class Start Date               = "None"
+        Class End Date                 = "None"
+        Instance Auto-Termination Date = "2019-07-26 18:52:07 -0700"
+        Class Session URL              = None
+        Instructor Name                = Check_Learndot
+        Classroom Region               = us-west-2
+        CD4PE Page                     = "https://tls-demo-cd4pe.classroom.puppet.com"
+        Student Info:
+            client0 is assigned system set: 0
+            tls-demonix0.classroom.puppet.com
+            tls-demowin0.classroom.puppet.com
+            Windows Password is: Puppetlabs!
